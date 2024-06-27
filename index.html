@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio d'Eliot Skinner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#entreprise">Entreprise</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="slide">
+        <h1>Bienvenue sur le portfolio d'Eliot Skinner</h1>
+        <p>Étudiant en BUT Informatique, spécialisé dans la création d'applications et l'automatisation des tests.</p>
+        <a href="#portfolio" class="btn">Voir mes projets</a>
+    </section>
+
+    <section id="portfolio" class="slide">
+        <h2>Mes Projets</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Projet android Studio</h3>
+                <p>J'ai développé ChefHub, une application mobile de gestion culinaire utilisant Firebase pour l'authentification et les bases de données en temps réel. L'application permet aux utilisateurs de découvrir, réserver et gérer des cours de cuisine ainsi que d'acheter des recettes, tout en offrant une interface utilisateur intuitive et des fonctionnalités avancées telles que la capture d'images, les animations de vue et l'intégration de SeekBar pour le filtrage par prix.</p>
+                <a href="" target="_blank">Pas encore publier</a>
+            </div>
+            <div class="project-card">
+                <h3>Serveur de Tests</h3>
+                <p>Mise en place d’un serveur dédié aux tests pour le déploiement autonome des environnements de tests.</p>
+                <a href="" target="_blank">Pas encore publier</a>
+            </div>
+            <div class="project-card">
+                <h3>Intégration API Sinch</h3>
+                <p>Automatisation de la réception des codes OTP via l'API Sinch pour améliorer l'efficacité des tests.</p>
+                <a href="" target="_blank">Pas encore publier</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cv" class="slide">
+        <h2>Mon CV</h2>
+        <div class="cv-content">
+            <div class="info">
+                <h3>Informations Personnelles</h3>
+                <p><strong>Nom :</strong> Eliot Skinner</p>
+                <p><strong>Téléphone :</strong> 07.82.71.21.21</p>
+                <p><strong>Email :</strong> <a href="mailto:eliothomas.skinner@gmail.com">eliothomas.skinner@gmail.com</a></p>
+                <p><strong>Adresse :</strong> Grasse</p>
+                <p><strong>Date de Naissance :</strong> 10/10/2003</p>
+
+                <h3>Compétences</h3>
+                <canvas id="skillsChart" width="400" height="400"></canvas>
+
+                <h3>Langues</h3>
+                <div class="language-skills">
+                    <div class="language">
+                        <img src="assets/france.png" alt="Drapeau Français" class="flag" data-percentage="100">
+                        <p>Français – Langue maternelle</p>
+                    </div>
+                    <div class="language">
+                        <img src="assets/uk.png" alt="Drapeau Anglais" class="flag" data-percentage="100">
+                        <p>Anglais bilingue (niveau C2)</p>
+                    </div>
+                    <div class="language">
+                        <img src="assets/spain.png" alt="Drapeau Espagnol" class="flag" data-percentage="75">
+                        <p>Espagnol (niveau B2)</p>
+                    </div>
+                </div>
+
+                <h3>Formations</h3>
+                <p>2022 - 2025 : BUT Informatique, IUT de Nice Côte d’Azur, Sophia Antipolis</p>
+                <p>2021 - 2022 : 1ère année License MIASHS, Faculty of Economics and Management Aix en Provence</p>
+                <p>2021 : Baccalauréat, Section Internationale Américaine, CIV, Valbonne Sophia Antipolis</p>
+                <p>2017 : Brevet du secourisme</p>
+
+                <h3>Expériences Professionnelles</h3>
+                <p>2022 - 2025 : QA Tester en alternance, Docaposte</p>
+                <ul>
+                    <li>Conception et exécution de tests automatisés en utilisant des outils comme Selenium, JUnit, et TestNG</li>
+                    <li>Développement de scripts de test en Java pour automatiser les processus de test</li>
+                    <li>Analyse des résultats de tests et génération de rapports pour les équipes de développement</li>
+                    <li>Collaboration avec les développeurs pour identifier et corriger les bugs</li>
+                    <li>Participation à des revues de code et à des sessions de planification agile</li>
+                </ul>
+                <p>2017 : Stage en entreprise, Thales Underwater Systems, Sophia Antipolis</p>
+                <p>2017 - 2020 : Tuteur d’élèves, Collège L’Eganaude, Centre International de Valbonne</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="entreprise" class="slide">
+        <h2>Mon Entreprise</h2>
+        <div class="entreprise-content">
+            <div class="logo">
+                <img src="assets/logo-docaposte.png" alt="Logo Docaposte">
+            </div>
+            <h3>Docaposte</h3>
+            <p>Docaposte est une entreprise française de services numériques, filiale du groupe La Poste, spécialisée dans la transformation digitale, la gestion documentaire, la sécurité numérique et la gestion de la chaîne d'approvisionnement.</p>
+            <h3>Mon Poste</h3>
+            <p>En tant que QA Tester en alternance, je suis responsable de la conception et de l'exécution de tests automatisés, de l'analyse des résultats de tests, de la collaboration avec les développeurs pour identifier et corriger les bugs, et de la participation à des revues de code et à des sessions de planification agile.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="slide">
+        <h2>Contactez-moi</h2>
+        <form action="mailto:eliothomas.skinner@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Eliot Skinner. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
