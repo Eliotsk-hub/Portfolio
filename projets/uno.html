@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNO Online - Eliot Skinner</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="progress-bar"></div>
+
+<header>
+  <div class="controls">
+    <a href="../index.html" class="home-icon">🏠</a>
+    <div class="title-center">
+      <h1 id="name">Eliot Skinner</h1>
+    </div>
+    <div class="controls-right">
+      <label class="switch">
+        <input type="checkbox" id="toggle-mode">
+        <span class="slider"></span>
+      </label>
+      <button id="toggle-lang">🇬🇧</button>
+    </div>
+  </div>
+</header>
+
+
+<section id="project">
+  <h2 data-i18n="project_title">UNO Online</h2>
+  <img src="../assets/images/uno.png" alt="UNO project" class="project-image">
+  <div class="section-content">
+    <p data-i18n="project_description">
+      UNO Online est un jeu multijoueur développé avec ReactJS et Java Spring Boot. Il permet de jouer au célèbre jeu de cartes en réseau, avec synchronisation en temps réel via WebSocket.
+    </p>
+    <h3 data-i18n="technologies_used">Technologies utilisées</h3>
+    <ul>
+      <li>ReactJS pour le front-end</li>
+      <li>Spring Boot pour le back-end</li>
+      <li>WebSocket pour la communication temps réel</li>
+      <li>Docker pour le déploiement</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2024 Eliot Skinner</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
